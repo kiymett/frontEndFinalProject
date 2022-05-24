@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+  
+.topnav {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+  }
+.element {
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+  }
+.header {
+    font-size: large;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(92, 73, 73);
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+  }
+#input{
+      border: solid 0.2px;
+      border-radius: 3px;
+      margin: 2px;
+      padding: 2px;
+      font-size: 15px;
+  }
+  
+.topnav a {
+    float:inline-start;
+    color: rgb(92, 73, 73);
+    align-items: center;
+    text-align: center;
+    padding: 24px 80px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+}
+  
+.topnav a:hover {
+    color: green;
+    font-weight: bold;
+
+}
+
+.header:hover {
+      color: green;
+      cursor: pointer;
+}
+
+.float-container {
+    display: flex;
+    /* padding: 20px; */
+    /* display: inline-block; */
+    /* width: 24%; */
+    position: relative;
+
+}
+
+.float-child {
+    width: 50%;
+    padding-top: 0px;
+    margin: 0px;
+} 
+
+.float-child .right-img {
+    
+    height: 350px;
+}
+
+.footer-child{
+    width: 50%;
+    float: right;
+    padding: 20px;
+
+}
+
+.footer-child.reserved {
+    /* margin-right: 20px; */
+    text-align: right;
+    align-items: center;
+
+}
+
+.footer-child.social {
+    /* margin-right: 20px; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+.foot {
+    /* text-align: center; */
+    background-color:rgb(248, 242, 240);
+    width: 100%;
+    /* padding: 1em; */
+    display: flex;
+    /* justify-content: center; */
+    height: 90px;
+
+
+}
+.line { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: lightgreen;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+}
+.container2 {
+    display: flex;
+    position: relative;
+    /* display: inline-block; */
+    /* width: 25%; */
+    position: relative;
+
+}
+.foto{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+    max-width: 100%; 
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+    
+}
+
+.foto:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    /* opacity: 0.7; */
+ }
+
+.right-img{
+    width: 100%;
+    position: relative;
+    padding: 2px;
+    right: -60px;
+    max-width: 150%;
+    margin-top: 5px;
+
+}
+
+.right-img.scrolled{
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    right: 0px;
+}
+
+@keyframes example {
+    from { right: -60px;}
+    to {right : 0px; }
+  
+}
+
+.media {
+    width: 50%;  
+    position: relative;
+
+}
+
+.fa {
+    /* padding: 10px;
+    font-size: 30px;
+    width: 50px; */
+    text-decoration: none;
+    /* margin: 5px 2px; */
+
+  }
+  
+.fa:hover {
+    background-color: green;
+}
+  
+.fa-media{
+object-fit: cover;
+width: 25px;
+height: 25px;
+object-position: 50% 50%;
+display: flex;
+position: relative;
+overflow: hidden;
+}
+
+.text1 {
+line-height: 1.6;
+font-size:16px;
+padding: 2px;
+margin: 2px;
+text-align: left;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+      
+    }
+   
+    
+}
+
+@media (max-width: 768px) {
+    .foto {
+        width: 125px;
+        height: 125px;
+        /* display: inline-block; */
+         
+    }
+    
+  }
+
+@media (max-width: 768px) {
+    .element{
+        margin-left: -5px;
+        padding: -5px;
+        font-size: 12px;
+        /* display: inline-block; */
+         
+    }
+    
+}
+
+  
